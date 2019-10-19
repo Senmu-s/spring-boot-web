@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBoot-test</title>
+    <link rel="stylesheet" href="style.css" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"/>
+
+    <!--<link rel="stylesheet"th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min-jsf.css}"/>-->
+    <script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}" type="application/javascript"></script>
+    <script th:src="@{/webjars/popper.js/1.14.3/popper.min.js}" type="application/javascript"></script>
+    <script th:src="@{/webjars/popper.js/1.14.3/popper.js}" type="application/javascript"></script>
+    <script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}" type="application/javascript"></script>
+
+</head>
+<body>
+    <h1 class="mb-4">Index page</h1>
+    <!-- Single button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+
+
+    <div>
+        <a th:href="/login">Test for database</a>
+    </div>
+</body>
+</html>

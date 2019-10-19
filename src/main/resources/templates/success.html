@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Successful!</h1>
+<div th:text="${name}"></div>
+<div th:text="${age}"></div>
+<a href="index.html" th:href="@{http://localhost:8080/login}">Lol lol</a>
+
+<table>
+    <th>Name</th>
+    <tr th:each="user : ${users}">
+        <td th:text="${user}"></td>
+    </tr>
+</table>
+<div>
+    <form method="post" action="/input">
+        <input type="text" name="name"/>
+        <input type="text" name="age"/>
+        <input type="submit"/>
+    </form>
+</div>
+</body>
+</html>
